@@ -1,0 +1,156 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#page-create-point header{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-create-point header a{
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+}
+
+#page-create-point header a span{
+    margin-right: 15px;
+    margin-top: 3px;
+    background-image: url('../assets/icones/arrow-left.svg');
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+#page-create-point form{
+    padding: 60px;
+    border-radius: 15px;
+    max-width: 740px;
+    background-color: white;
+    margin: 80px auto;
+}
+
+form h1{
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+form fieldset{
+    margin-top: 34px;
+    margin-bottom: 34px;
+    border: 0;
+}
+
+form legend{
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+form legend span{
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+form .field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+}
+
+form .field-group{
+    display: flex;
+    /* flex-direction: initial; */
+}
+
+form input, form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    /* outline: none; Retira a linha preta da caixa de texto quando selecionada*/
+}
+
+form label{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form button{
+    width: 260px;
+    height: 56px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 40px;
+    border-radius: 8px;
+    transition: background-color 400ms;
+}
+
+form button:hover{
+    background-color: #2fb86e;
+}
+
+.items-grid{
+    font-family: 'Ubuntu', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px; /*margem*/
+ }
+
+.items-grid li{
+    background-color: #f5f5f5;
+    list-style: none; /*retira o ponto da lista*/
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    height: 180px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer; /*mouse modifica para modo seletor*/
+    transition: background-color 400ms;
+}
+
+.items-grid li span{
+    margin-top: 12px;
+    flex:1;
+    display: flex;
+    align-items: center;
+    color: var(--title-color);
+}
+
+.items-grid li:hover{
+    background-color: #e1faec;
+}
+
+.items-grid li.selected{
+    background-color: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+.items-grid li img, .items-grid li span{
+    pointer-events: none;
+}
